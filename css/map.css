@@ -1,0 +1,101 @@
+.body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.map-explanation {
+    display: flex;
+    margin: 5% auto;
+    width: 80%;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* outline: dashed 1px black; */
+    
+}
+
+.map-explanation-container {
+    background: #ffffff;
+    height: auto;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 300px;
+    transition: all 0.2 linear;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.map-explanation-box {
+    box-sizing: border-box;
+    height: 300px;
+    flex: 1 1 150px;
+    position: relative;
+}
+
+.map-explanation-box .map-explanation-box-bg-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/map-img.jpg");
+    background-position: center 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.map-explanation-box .explanation {
+    position: absolute;
+    justify-content: space-between;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.explanation .explanation-img {
+    z-index: 3;
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #F4EAE2;
+    border: 2px solid #3d2b11;
+}
+
+.explanation .explanation-title {
+    margin: 0 auto;
+    z-index: 2;
+    top: 0;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .map-explanation{height: auto;}
+}
+
+#map {
+    display: flex;
+    margin-top: 20%;
+    box-sizing: border-box;
+    margin: 5% auto;
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 75vw;
+    background: #3d2b11;
+    border: 15px solid #3d2b11;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}

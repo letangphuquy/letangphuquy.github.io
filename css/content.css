@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+.content-container {
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    margin: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card-body {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    position: absolute;
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease 0.5s;
+}
+
+.card h1 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+.card p {
+    width: 90%;
+    font-size: 13px;
+    font-weight: bold;
+    word-spacing: 5px;
+}
+
+
+.card-btn {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--secondary-color);
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--secondary-color));
+    -webkit-filter: invert(0%);
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.card-btn:hover, .card-btn:focus {
+    border: 1px solid transparent;
+    transform: rotate(180deg);
+    background: var(--secondary-color);
+    filter: opacity(1);
+}
+
+.card-btn:hover img, .card-btn:focus img {
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.card:hover .card-body, .card:focus .card-body {
+    backdrop-filter: blur(2px);
+    top: 0;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    background: #faf3ee;
+    height: auto;
+
+    outline: dashed 2px black;
+}
+
+.about-us-container .about-us-box {
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    border: 20px solid transparent;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}
+
+.about-us-box h1, p {
+    margin: 10px;
+}
+
+.about-us-container .about-us-media {
+    overflow: hidden;
+    object-fit: cover;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+}
+
+.about-us-media-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.about-us-media .about-us-media-content img {
+    margin: 0 auto;
+    
+    width: 100%;
+    height: 300px;
+
+    object-fit: none;
+}
+
+.contact-and-donate {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 5% auto;
+    justify-content: space-evenly;
+    align-items: center;
+}

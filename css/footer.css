@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+footer {
+    font-family: var(--ui-font);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-categories {
+    width: 30%;
+}
+
+.footer-categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-categories a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2vh;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+.footer-categories a:hover {
+    color: var(--curtain-color);
+    font-size: 2.2vh;
+    text-shadow:
+    1px 1px 0 var(--secondary-color);
+    transition: all ease 0.5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.medias-wrapper {
+    padding: 0 auto;
+    width: 15%;
+}
+
+.medias {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    fill: var(--secondary-color);
+}
+
+.medias img {
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.medias img:hover {
+    width: 5vh;
+    filter: opacity(0.5) drop-shadow(1px 1px 1px var(--secondary-color));
+    transition: all ease 1s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
