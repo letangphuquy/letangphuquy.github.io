@@ -1,32 +1,277 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title> LTPQ 's tech blog </title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- 
-        -->
-        <div>
-            <img src="images/logo.png" alt="logo"/>
-            <h1> Algorithms & computer science blog </h1>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dai Nam Encyclopedia | Home</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/contact-form.css" />
+
+    <script src="js/loader.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script defer>
+      style = window.getComputedStyle(document.documentElement);
+      console.log(
+        "Size = " +
+          style.getPropertyValue("width") +
+          " and " +
+          style.getPropertyValue("height")
+      );
+      console.log("Root font size = " + style.getPropertyValue("font-size"));
+    </script>
+  </head>
+  <body>
+    <div class="code-loader"><span>{</span><span>}</span></div>
+    <div class="container">
+      <nav data-active="false">
+        <div class="nav-bar">
+          <button aria-label="Toggle menu" class="menu-btn" id="btn">
+            <div class="menu-hamburger"></div>
+          </button>
+          <div class="nav-title">
+            <h1><a href="index.html">DAI NAM ENCYCLOPEDIA</a></h1>
+          </div>
+          <a href="THANKS.html">
+            <img
+              src="images/Dai Nam encyclopedia's Logo_light.png"
+              aria-label="About us"
+              class="about-us-btn"
+            />
+          </a>
         </div>
-        <h2> Hello, <em>friend</em></h2>
-        <button> Let me know your name </button>
-        <p> Some main features of this website: </p>
-        <ul>
-            <li> Free </li>
-            <li> Open source. Find us on <a href="https://github.com/letangphuquy"> Github </a> </li>
-            <li> Quality content </li>
-            <li> To share knowledge </li>
-        </ul>
-        <p> Interested? Start reading now! Hope you find what you need </p>
-        <p> Here is a very long paragraph just to test ABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABC</p>
-        <script src="scripts/main.js"></script>
-    </body>
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div id="menu-list">
+            <div class="menu-item">
+              <a href="index.html">
+                <i class="fa-solid fa-home"></i>
+                <span>Home</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="events.html">
+                <i class="fa-solid fa-blog"></i>
+                <span>Events</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="map.html">
+                <i class="fa-solid fa-map"></i>
+                <span>Map</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="shop.html">
+                <i class="fa-solid fa-shop"></i>
+                <span>Shop</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="content-container">
+          <section class="cards">
+            <h1> Vietnam 1800s maps</h1>
+            <div class="card card1">
+              <img src="images/cochinchina.jpg" />
+              <div class="card-body">
+                <h1>Cochinchina</h1>
+                <p>
+                  Cochinchina or Cochin-China, also known as Nam Kỳ, is a
+                  historical exonym for part of Vietnam. Sometimes it referred
+                  to the whole of Vietnam, but it was commonly used to refer to
+                  the region south of the Gianh River. So during the French
+                  colonial period, the label Cochinchina moved further south,
+                  and came to refer exclusively to the southernmost part of
+                  Vietnam. The region is famous for its principal city, Saigon.
+                </p>
+                <form
+                  action="https://en.wikipedia.org/wiki/Cochinchina"
+                  method="get"
+                  target="_blank"
+                >
+                  <button class="card-btn">
+                    <img src="images/up-right-arrow.png" class="card-btn-img" />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="card card2">
+              <img src="images/annam.jpg" style="transform: scale(1.5)" />
+              <div class="card-body">
+                <h1>Annam</h1>
+                <p>
+                  Annam, or Trung Kỳ. Before the establishment of the French
+                  protectorate of Annam, the name Annam was used in the West to
+                  refer to Vietnam as a whole. Annam means "Pacified South" in
+                  Sino-Vietnamese. The protectorate of Annam became a part of
+                  French Indochina in 1887, along with two other Vietnamese
+                  regions, Cochinchina (Vietnamese: Nam Kỳ) in the South and
+                  Tonkin (Bắc Kỳ) in the North. An Nam is usually considered
+                  offensively demeaning to Vietnamese people, and mostly used in
+                  sarcastic manners. Trung Kỳ (also spelled Trung Kì) is used
+                  instead in formal contexts.
+                </p>
+                <form
+                  action="https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+                  method="get"
+                  target="_blank"
+                >
+                  <button class="card-btn">
+                    <img src="images/up-right-arrow.png" class="card-btn-img" />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="card card3">
+              <img src="images/tonkin.jpg" style="transform: scale(1.1)" />
+              <div class="card-body">
+                <h1>Tonkin</h1>
+                <p>
+                  Tonkin is an exonym referring to the northern region of
+                  Vietnam. During the 17th and 18th centuries, this term
+                  referred to the domain Đàng Ngoài under Trịnh lords' control,
+                  including both the Northern and Thanh-Nghệ regions, north of
+                  the Gianh River. From 1884 to early 1945, this term was used
+                  for the French protectorate of Tonkin, composed of only the
+                  Northern region. "Tonkin" is a Western rendition of Đông Kinh,
+                  meaning 'Eastern Capital'. Locally, Tonkin is nowadays known
+                  as miền Bắc, or Bắc Bộ, meaning 'Northern Region'.
+                </p>
+                <form
+                  action="https://en.wikipedia.org/wiki/Tonkin"
+                  method="get"
+                  target="_blank"
+                >
+                  <button class="card-btn">
+                    <img src="images/up-right-arrow.png" class="card-btn-img" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <div class="about-us-container">
+            <div class="about-us-box">
+              <h1 style="cursor: pointer" onclick="redirectToThanks()">
+                About us
+              </h1>
+              <p>
+                We are a non-profitable organization publishing the old
+                Vietnam’s most read history encyclopedia.
+              </p>
+            </div>
+            <div class="about-us-media">
+              <div class="about-us-media-content">
+                <img src="images/about-us-img.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-and-donate">
+            <div class="contact-form">
+              <div class="contact-media">
+                <img src="" alt="" />
+              </div>
+              <div class="popup">
+                <form class="form">
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 34 34"
+                      height="34"
+                      width="34"
+                    >
+                      <path
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                        stroke="#115DFC"
+                        d="M7.08385 9.91666L5.3572 11.0677C4.11945 11.8929 3.50056 12.3055 3.16517 12.9347C2.82977 13.564 2.83226 14.3035 2.83722 15.7825C2.84322 17.5631 2.85976 19.3774 2.90559 21.2133C3.01431 25.569 3.06868 27.7468 4.67008 29.3482C6.27148 30.9498 8.47873 31.0049 12.8932 31.1152C15.6396 31.1838 18.3616 31.1838 21.1078 31.1152C25.5224 31.0049 27.7296 30.9498 29.331 29.3482C30.9324 27.7468 30.9868 25.569 31.0954 21.2133C31.1413 19.3774 31.1578 17.5631 31.1639 15.7825C31.1688 14.3035 31.1712 13.564 30.8359 12.9347C30.5004 12.3055 29.8816 11.8929 28.6437 11.0677L26.9171 9.91666"
+                      ></path>
+                      <path
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                        stroke="#115DFC"
+                        d="M2.83331 14.1667L12.6268 20.0427C14.7574 21.3211 15.8227 21.9603 17 21.9603C18.1772 21.9603 19.2426 21.3211 21.3732 20.0427L31.1666 14.1667"
+                      ></path>
+                      <path
+                        stroke-width="2.5"
+                        stroke="#115DFC"
+                        d="M7.08331 17V8.50001C7.08331 5.82872 7.08331 4.49307 7.91318 3.66321C8.74304 2.83334 10.0787 2.83334 12.75 2.83334H21.25C23.9212 2.83334 25.2569 2.83334 26.0868 3.66321C26.9166 4.49307 26.9166 5.82872 26.9166 8.50001V17"
+                      ></path>
+                      <path
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2.5"
+                        stroke="#115DFC"
+                        d="M14.1667 14.1667H19.8334M14.1667 8.5H19.8334"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="note">
+                    <label class="title">Subscribe for updates</label>
+                    <span class="subtitle"
+                      >Subscribe to this weekly news letter so you don’t miss
+                      out on the new hot tech topics.</span
+                    >
+                  </div>
+                  <input
+                    placeholder="Enter your e-mail"
+                    title="Enter your e-mail"
+                    name="email"
+                    type="email"
+                    class="input_field"
+                  />
+                  <button class="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-categories">
+            <ul class="footer-categories-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="map.html">Map</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="medias-wrapper">
+            <div class="medias">
+              <a href="#instagram"
+                ><img src="images/icons8-instagram.svg" width="30px"
+              /></a>
+              <a href="#twitter"
+                ><img src="images/icons8-twitter.svg" alt="" width="30px"
+              /></a>
+              <a href="#youtube"
+                ><img src="images/icons8-youtube.svg" alt="" width="30px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    function redirectToThanks() {
+      window.location.href = "THANKS.html";
+    }
+  </script>
 </html>

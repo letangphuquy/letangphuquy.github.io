@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dai Nam Encyclopedia | Events</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/events.css" />
+
+    <script src="js/loader.js" defer></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/searchbar.js" defer></script>
+  </head>
+  <body>
+    <div class="code-loader"><span>{</span><span>}</span></div>
+    <div class="container">
+      <nav data-active="false">
+        <div class="nav-bar">
+          <button aria-label="Toggle menu" class="menu-btn" id="btn">
+            <div class="menu-hamburger"></div>
+          </button>
+          <div class="nav-title">
+            <h1><a href="index.html">DAI NAM ENCYCLOPEDIA</a></h1>
+          </div>
+          <button aria-label="Buy souvenirs" class="buy-souvenirs-btn">
+            <a href="THANKS.html"><p>About</p></a>
+          </button>
+        </div>
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div id="menu-list">
+            <div class="menu-item">
+              <a href="index.html">
+                <i class="fa-solid fa-home"></i>
+                <span>Home</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="events.html">
+                <i class="fa-solid fa-blog"></i>
+                <span>Events</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="map.html">
+                <i class="fa-solid fa-map"></i>
+                <span>Map</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="shop.html">
+                <i class="fa-solid fa-shop"></i>
+                <span>Shop</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <header id="blog-heading">
+          <h1>Blogs</h1>
+        </header>
+        <section id="blog">
+          <div class="searchbar-container">
+            <div class="input-container">
+              <input
+                type="text"
+                id="search-item"
+                name="text"
+                class="input"
+                placeholder="search..."
+                oninput="search()"
+              />
+              <span class="icon-search">
+                <svg
+                  width="19px"
+                  height="19px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      opacity="1"
+                      d="M14 5H20"
+                      stroke="#000"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      opacity="1"
+                      d="M14 8H17"
+                      stroke="#000"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                      stroke="#000"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      opacity="1"
+                      d="M22 22L20 20"
+                      stroke="#000"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="blog-container" id="blog-container">
+            <!-- box1 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/temple.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a
+                  href="https://en.wikipedia.org/wiki/Temple_of_Literature,_Hanoi"
+                  ><h3 class="blog-title">Temple of Literature</h3></a
+                >
+                <p>
+                  The Temple of Literature was built in 1070 as a temple complex
+                  honoring Confucius, but it’s also the site of the Imperial
+                  Academy that’s recognized as the first university in Vietnam.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Temple_of_Literature,_Hanoi"
+                  >Read more</a
+                >
+              </div>
+            </div>
+
+            <!-- box2 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/hue.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="https://en.wikipedia.org/wiki/Imperial_City_of_Huế"
+                  ><h3 class="blog-title">Hue Imperial Citadel</h3></a
+                >
+                <p>
+                  Don’t miss the magnificent fortress in the center of Hue, a
+                  UNESCO-listed site that used to be the imperial capital of
+                  Vietnam.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Imperial_City_of_Huế"
+                  >Read more</a
+                >
+              </div>
+            </div>
+
+            <!-- box3 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/dinh.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="https://en.wikipedia.org/wiki/Independence_Palace"
+                  ><h3 class="blog-title">Independence Palace</h3></a
+                >
+                <p>
+                  Another must-visit historic building in Ho Chi Minh is the
+                  Independence Palace, also known as the Reunification Palace.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Independence_Palace"
+                  >Read more</a
+                >
+              </div>
+            </div>
+
+            <!-- box4 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/cuchi.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"><h3 class="blog-title">Cu Chi Tunnels</h3></a>
+                <p>
+                  Not far from Ho Chi Minh is the Cu Chi Tunnels, a famous
+                  attraction that’s a popular destination for half-day tours out
+                  of the city.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+
+            <!-- box5 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/coloa.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"><h3 class="blog-title">Co Loa Citadel</h3></a>
+                <p>
+                  Co Loa Citadel is located in Dong Anh district, Ha Noi City.
+                  In 208 B.C., after uniting Lac Viet and Au Viet tribes to form
+                  a new Kingdom, Au Lac, King An Duong Vuong chose this site as
+                  the capital and built Co Loa Citadel.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+
+            <!-- box6 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/hoian.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"><h3 class="blog-title">Hoi An Ancient Town</h3></a>
+                <p>
+                  Hoi An Ancient Town is located in Quang Nam province, about 30
+                  km south of Da Nang city. At the end of the 16th century, Hoi
+                  An used to be an international trade hub on the East-West sea
+                  route, a bustling trading port in Dang Trong region of Viet
+                  Nam under the reign of the Nguyen Lords.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+
+            <!-- box7 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/hoalo.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"><h3 class="blog-title">Hoa Lo Prison</h3></a>
+                <p>
+                  While historical museums in Hanoi are mostly rather
+                  propagandist and perhaps superficial, Hoa Lo Prison can be a
+                  good fit to catch up on the city’s back story.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+
+            <!-- box8 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/khaidinh.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"
+                  ><h3 class="blog-title">The Tomb of Khai Dinh</h3></a
+                >
+                <p>
+                  Among plenty of royal tombs in Hue, Vietnam’s former capital,
+                  Khai Dinh’s tomb sets itself apart from other Nguyen Dynasty
+                  tombs with an appealing fusion of Asian and European touches.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+
+            <!-- box9 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/myson.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"><h3 class="blog-title">My Son Sanctuary</h3></a>
+                <p>
+                  Located in the Quang Nam Province of Central Vietnam, about 64
+                  km/40 miles from Danang, the My Son Sanctuary is a complex of
+                  ruins belonging to the Hindu religion and dedicated to Shiva.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+
+            <!-- box10 -->
+            <div class="blog-box">
+              <!-- img -->
+              <div class="blog-img">
+                <img src="images/condao.jpg" alt="Blog" />
+              </div>
+
+              <!-- text -->
+              <div class="blog-text">
+                <span>30 May 2023</span>
+                <a href="#"><h3 class="blog-title">Con Dao Prison</h3></a>
+                <p>
+                  Constructed by French colonists in 1862, the Con Dao Prison
+                  located in Vung Tau is one of the oldest prisons in the
+                  country.
+                </p>
+                <a>Read more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h3 id="no-result">No result found</h3>
+      </main>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-categories">
+            <ul class="footer-categories-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="map.html">Map</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="medias-wrapper">
+            <div class="medias">
+              <a href="#instagram"
+                ><img src="images/icons8-instagram.svg" width="30px"
+              /></a>
+              <a href="#twitter"
+                ><img src="images/icons8-twitter.svg" alt="" width="30px"
+              /></a>
+              <a href="#youtube"
+                ><img src="images/icons8-youtube.svg" alt="" width="30px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
