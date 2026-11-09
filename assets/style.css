@@ -1,0 +1,32 @@
+/* Minimal style, modeled on hyhieu.github.io (Bootstrap defaults, centered 8/12 column). */
+:root { --fg: #212529; --muted: #6c757d; --rule: rgba(0,0,0,.1); --link: #007bff; --bg: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6e6e6; --muted: #9aa0a6; --rule: rgba(255,255,255,.15); --link: #6ea8fe; --bg: #121212; }
+}
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem; line-height: 1.5;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 72px 16px 48px; }
+h1, h2, h3, h4 { margin: 0 0 .5rem; font-weight: 500; line-height: 1.2; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+p, ul, ol { margin: 0 0 1rem; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 1rem 0; }
+li { margin-bottom: .25rem; }
+img { max-width: 100%; }
+code { font-size: 87.5%; color: #e83e8c; }
+pre { background: rgba(127,127,127,.08); padding: 12px; overflow-x: auto; border-radius: 4px; }
+pre code { color: inherit; }
+blockquote { margin: 0 0 1rem; padding-left: 1rem; border-left: 3px solid var(--rule); color: var(--muted); }
+table { border-collapse: collapse; margin-bottom: 1rem; }
+th, td { border: 1px solid var(--rule); padding: 4px 8px; }
+.view { margin: .5rem 0 1.5rem; }
+.muted { color: var(--muted); }
+.post-meta { color: var(--muted); margin-bottom: 1.5rem; }
+.back { display: inline-block; margin-bottom: 2rem; }
