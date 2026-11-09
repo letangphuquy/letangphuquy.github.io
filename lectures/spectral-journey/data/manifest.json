@@ -1,0 +1,67 @@
+{
+ "source": "RunPod H100",
+ "runs": [
+  "L1_d512_h4",
+  "L2_d128_h4",
+  "L2_d256_h4",
+  "L2_d32_h4",
+  "L2_d32_h4_e15",
+  "L2_d32_h4_e25",
+  "L2_d32_h4_e35",
+  "L2_d512_h1",
+  "L2_d512_h2",
+  "L2_d512_h4",
+  "L2_d512_h8",
+  "L2_d64_h4"
+ ],
+ "analysis": [
+  "L2_d128_h4",
+  "L2_d256_h4",
+  "L2_d512_h1",
+  "L2_d512_h2",
+  "L2_d512_h4",
+  "L2_d512_h8"
+ ],
+ "models": [
+  {
+   "name": "L2_d128_h4",
+   "arch": {
+    "n_layers": 2,
+    "d_model": 128,
+    "n_heads": 4,
+    "d_head": 32,
+    "d_mlp": 512,
+    "d_vocab": 16,
+    "n_ctx": 162,
+    "rotary_base": 10000,
+    "rotary_dim": 32,
+    "eps": 1e-05,
+    "act_fn": "gelu",
+    "normalization_type": "LN"
+   },
+   "bytes": 801824,
+   "step": 71501
+  },
+  {
+   "name": "L2_d512_h4",
+   "arch": {
+    "n_layers": 2,
+    "d_model": 512,
+    "n_heads": 4,
+    "d_head": 128,
+    "d_mlp": 2048,
+    "d_vocab": 16,
+    "n_ctx": 162,
+    "rotary_base": 10000,
+    "rotary_dim": 128,
+    "eps": 1e-05,
+    "act_fn": "gelu",
+    "normalization_type": "LN"
+   },
+   "bytes": 12644384,
+   "step": 27145
+  }
+ ],
+ "sln": "sln.json",
+ "dataset": "dataset.json"
+}
