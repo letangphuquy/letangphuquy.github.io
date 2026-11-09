@@ -21,8 +21,8 @@ I am looking for PhD positions in AI &times; Optimization.
 ### **Past**
 
 - **Spartan.** Software Engineer Intern, building [LayerProof](https://layerproof.app/) (2026).
-- **King Mongkut's University of Technology North Bangkok.** Research Intern, railway hub location planning (2025).
-- **Vietnam–Korea University of ICT, University of Da Nang.** Undergraduate, top entrance scorer and valedictorian (2022-26).
+- **KMUTNB.** Research Intern, railway hub location planning (2025).
+- **VKU.** Undergraduate, top entrance scorer and valedictorian (2022-26).
 - **LQDOJ.** Algorithm Technical Specialist, problem setter for 10+ contests (2022-25).
 - **ICPC Asia Regional.** Bronze Medal (2022).
 - **Vietnam National Olympiad in Informatics.** First Prize.
