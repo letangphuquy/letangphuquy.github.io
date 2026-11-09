@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dai Nam History</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script src="js/nav.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav data-active="false">
+        <div class="nav-bar">
+          <button aria-label="Toggle menu" class="menu-btn" id="btn">
+            <div class="menu-hamburger"></div>
+          </button>
+          <button aria-label="Buy souvenirs" class="buy-souvenirs-btn">
+            <a href="THANKS.html"><p>About</p></a>
+          </button>
+        </div>
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div id="menu-list">
+            <div class="menu-item">
+              <a href="index.html">
+                <i class="fa-solid fa-home"></i>
+                <span>Home</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="events.html">
+                <i class="fa-solid fa-blog"></i>
+                <span>Events</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="#">
+                <i class="fa-solid fa-map"></i>
+                <span>Maps</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="shop.html">
+                <i class="fa-solid fa-shop"></i>
+                <span>Shop</span>
+                <div class="menu-background"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <!-- Insert actual content here -->
+        <div class="searchbar-container">
+          <div class="input-container">
+            <input
+              type="text"
+              id="search-item-shop"
+              name="text"
+              class="input"
+              placeholder="search..."
+              oninput="search_shop()"
+            />
+            <span class="icon">
+              <svg
+                width="19px"
+                height="19px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    opacity="1"
+                    d="M14 5H20"
+                    stroke="#000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    opacity="1"
+                    d="M14 8H17"
+                    stroke="#000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                    stroke="#000"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    opacity="1"
+                    d="M22 22L20 20"
+                    stroke="#000"
+                    stroke-width="3.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-categories">
+            <ul class="footer-categories-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="#map">Map</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="medias-wrapper">
+            <div class="medias">
+              <a href="#instagram"
+                ><img src="images/icons8-instagram.svg" width="30px"
+              /></a>
+              <a href="#twitter"
+                ><img src="images/icons8-twitter.svg" alt="" width="30px"
+              /></a>
+              <a href="#youtube"
+                ><img src="images/icons8-youtube.svg" alt="" width="30px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
