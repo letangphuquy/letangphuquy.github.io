@@ -77,3 +77,12 @@ footer a { color: var(--muted); }
   .news li { flex-direction: column; gap: 0; }
   .date { flex-basis: auto; }
 }
+
+/* experience / education */
+.cv-item { margin-bottom: 16px; }
+.cv-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.cv-head .when { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.cv-item p { margin: 2px 0 0; color: var(--muted); }
+.honors { margin: 0; padding-left: 20px; }
+.honors li { margin-bottom: 6px; }
+.skills span { min-width: 110px; }
