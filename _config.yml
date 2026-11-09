@@ -1,0 +1,30 @@
+# Site settings. Built automatically by GitHub Pages (Jekyll) on every push.
+title: Lê Tăng Phú Quý
+description: M.S. student in Computer Science at VinUniversity, working on AI for optimization.
+lang: en
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-relative-links
+
+# Blog posts live in _posts/ and are served at /blog/<slug>
+permalink: /blog/:title
+
+# Never published to the website (still visible in the GitHub repository itself).
+exclude:
+  - _private
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "23bwd_vku/assets/fontawesome/less"
+  - "23bwd_vku/assets/fontawesome/scss"
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "", type: drafts }
+    values: { layout: post }

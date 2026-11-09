@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<a class="back" href="{{ '/blog/' | relative_url }}">&larr; Blog</a>
+<h2><b>{{ page.title }}</b></h2>
+<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+{{ content }}

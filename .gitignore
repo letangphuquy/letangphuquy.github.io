@@ -1,0 +1,8 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
+Gemfile.lock
+
+# Private notes: local only, never committed or published
+_private/
